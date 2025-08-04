@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Animesh Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 60px;
+            background-color: rgb(2, 2, 50);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 30px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(228, 21, 118);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+        .Buttons {
+            margin-right: 40px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+        }
+        .firstsection > div {
+            width: 40%;
+        }
+        .leftsection {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            padding-right: 60px;
+            
+
+        }
+        .rightsection img {
+            border-radius: 100%;
+            width: 40%;
+            margin: 20px 200px;
+        }
+        .blue {
+            color: rgb(10, 43, 104);
+        }
+        #element {
+            color: rgb(247, 49, 131);
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: rgb(247, 49, 131);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: rgb(202, 35, 110);
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: rgb(228, 21, 118);
+            margin: 80px 0 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .experience-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .experience-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 5px solid rgb(228, 21, 118);
+            padding: 25px 30px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(228, 21, 118, 0.2);
+        }
+        .experience-card h2 {
+            margin-bottom: 10px;
+            color: rgb(247, 49, 131);
+            font-size: 1.5rem;
+        }
+        .experience-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ddd;
+        }
+        hr {
+            border: 0;
+            background: rgb(63, 25, 88);
+            margin: 100px auto;
+            height: 1.1px;
+            width: 90%;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: rgb(2, 2, 50);
+            color: white;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"> Animesh Portfolio </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+               <div>
+                    <p>Hi, My name is <span class="blue">Animesh Dewangan</span></p>
+                    <p>and I am a passionate <span id="element"></span></p>
+                </div>
+                <div class="Buttons">
+                    <p><a href="Animesh_Dewangan_Resume (2).pdf" class="btn" download>Download Resume</a></p>
+                    
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="WhatsApp Image 2024-12-18 at 8.53.15 PM.jpeg" alt="Profile Image">
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <h1 class="section-title">About Me</h1>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <p>
+                        I am a passionate 3rd year research student at IISER Kolkata, deeply interested in materials chemistry and computational modeling. I’ve interned at top institutes like NIT Raipur and IIT Guwahati, where I gained hands-on experience in nanomaterials synthesis and excited state dynamics. I enjoy blending science with technology—building projects that communicate complex research through clean, interactive web design.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <hr>
+            <h1 class="section-title">Work Experience</h1>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <h2>NIT Raipur - Summer Internship</h2>
+                    <p>Conducted research on the <strong>synthesis and characterization of Carbon Quantum Dots</strong>. Developed hands-on experience in nanomaterials, spectroscopic analysis, and experimental design.</p>
+                </div>
+                <div class="experience-card">
+                    <h2>IIT Guwahati - Summer Research Internship</h2>
+                    <p>Studied the <strong>effects of fluorination</strong> on the excited-state properties of <strong>Salicylideneaniline</strong>. Focused on photophysical properties, intramolecular proton transfer, and electronic transitions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <h1 class="section-title">Projects</h1>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <h2>Portfolio Website</h2>
+                    <p>Built a responsive personal portfolio using HTML, CSS, and JavaScript to showcase my profile, internships, and achievements.</p>
+                </div>
+                <div class="experience-card">
+                    <h2>Data Visualization with Origin</h2>
+                    <p>Analyzed scientific datasets using OriginLab. Created graphs and visualizations for academic research papers.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="skills-section" id="skills">
+            <h1 class="section-title">Skills</h1>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <p><strong>Languages:</strong> Python, LaTeX</p>
+                    <p><strong>Tools:</strong> OriginLab, VS Code</p>
+                    <p><strong>Web:</strong> HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h1 class="section-title">Contact Me</h1>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <p><strong>Name:</strong> Animesh Dewangan</p>
+                    <p><strong>Email:</strong> ad23ms262@iiserkol.ac.in</p>
+                    <p><strong>Phone:</strong> +91-8085335265</p> <!-- Replace with actual number if desired -->
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            © 2025 Animesh Dewangan | Built with ❤️ by Me
+            <div style="margin-top: 20px;">
+                <a href="https://www.linkedin.com/in/animeshdewanagann/" target="_blank" style="margin: 0 10px; color: white;"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/animeshdewangan" target="_blank" style="margin: 0 10px; color: white;"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Research Student', 'Frontend Developer', 'LaTeX Enthusiast', 'Origin Analyst'],
+            typeSpeed: 60,           // typing speed in milliseconds
+            backSpeed: 30,           // speed of deleting
+            backDelay: 1000,         // delay before deleting starts
+            startDelay: 200,         // initial delay before typing starts
+            loop: true,              // loops the animation
+            smartBackspace: true,    // only backspace what doesn't match next string
+            showCursor: true,        // show blinking cursor
+            cursorChar: '|',         // custom cursor character
+        });
+    </script>
+
+</body>
+</html>
